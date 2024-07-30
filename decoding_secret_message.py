@@ -19,7 +19,7 @@ def main(url):
     ycoordinates = [int(string_coord) for string_coord in ycoordinates]
 
     # Initialise an empty grid to display the message in 
-    grid = [['*' for _ in range(max(xcoordinates)+1)] for _ in range(max(ycoordinates)+1)]
+    grid = [[' ' for _ in range(max(xcoordinates)+1)] for _ in range(max(ycoordinates)+1)]
 
     # Iterate through x coordinates and place the corresponding character into the grid
     for x_idx, x_coord in enumerate(xcoordinates):
